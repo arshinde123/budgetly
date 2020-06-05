@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Budgetly</title>
+</head>
+
+<body>
+    <div class="jumbotron " style="height: 100vh;">
+        <div class="d-flex justify-content-between">
+            <div class="btn-group" role="group" aria-label="Available budget">
+                <button type="button" class="btn btn-primary">Available</button>
+                <button type="button" class="btn btn-light">3838380.00</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Income">
+                <button type="button" class="btn btn-success">Income</button>
+                <button type="button" class="btn btn-light">29990.00</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Expense">
+                <button type="button" class="btn btn-danger">Expense</button>
+                <button type="button" class="btn btn-light">-38380.00&nbsp; <span
+                        class="badge badge-warning badge-pill">-34%</span></button>
+            </div>
+        </div>
+        <hr>
+        <div class="row bg-white p-5">
+            <div class="col-2">
+                <select class="custom-select border border-secondary" id="inputGroupSelect01">
+                    <option selected>Choose +/-</option>
+                    <option value="1">+ Income</option>
+                    <option value="2">- Expense</option>
+                </select>
+                <!-- <div class="dropdown">
+                    <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Income/Expense
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Income</a>
+                        <a class="dropdown-item" href="#">Expense</a>
+                    </div>
+                </div> -->
+            </div>
+            <div class="col-4">
+                <input class="form-control border border-secondary" type="text" placeholder="Description">
+            </div>
+            <div class="col-4">
+                <input class="form-control border border-secondary" type="number" placeholder="Value">
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-outline-secondary"><i class="fa fa-check"
+                        aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="income col-6">
+                <button type="button" class="btn btn-success btn-sm">Incomes</button>
+                <hr>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Cras justo odio
+                        <div>
+                            <span class="badge badge-success badge-pill">-10000</span>
+                            <span class="btn badge badge-pill close-pill"><i class="fa fa-times text-success"
+                                    aria-hidden="true"></i></span>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Dapibus ac facilisis in
+                        <div>
+                            <span class="badge badge-success badge-pill">-10000</span>
+                            <span class="btn badge badge-pill close-pill"><i class="fa fa-times text-success"
+                                    aria-hidden="true"></i></span>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Morbi leo risus
+                        <div class="badges">
+                            <span class="badge badge-success badge-pill">-10000</span>
+                            <span class="btn badge badge-pill close-pill"><i class="fa fa-times text-success"
+                                    aria-hidden="true"></i></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="expense col-6">
+                <button type="button" class="btn btn-danger btn-sm">Expenses</button>
+                <hr>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Cras justo odio
+                        <div>
+                            <span class="badge badge-danger badge-pill">-10000</span>
+                            <span class="badge badge-warning badge-pill">-34%</span>
+                            <span class="btn badge badge-pill close-pill"><i class="fa fa-times text-danger"
+                                    aria-hidden="true"></i></span>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Dapibus ac facilisis in
+                        <div>
+                            <span class="badge badge-danger badge-pill">-10000</span>
+                            <span class="badge badge-warning badge-pill">-34%</span>
+                            <span class="btn badge badge-pill close-pill"><i class="fa fa-times text-danger"
+                                    aria-hidden="true"></i></span>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Morbi leo risus
+                        <div class="badges">
+                            <span class="badge badge-danger badge-pill">-10000</span>
+                            <span class="badge badge-warning badge-pill">-34%</span>
+                            <span class="btn badge badge-pill close-pill"><i class="fa fa-times text-danger"
+                                    aria-hidden="true"></i></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
